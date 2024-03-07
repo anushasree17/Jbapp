@@ -12,8 +12,7 @@ export class JournalService {
     private journalRepo: Repository<JournalEntity>,
   ) {}
   async getAllJournals() {
-    return []
-    // return this.journalRepo.find();
+    return this.journalRepo.find();
   }
   async createJournal(inp: JournalInputDTO) {
     const newJournal = await this.journalRepo.create(inp);
