@@ -10,6 +10,7 @@ import { JournalService } from './journal/journal.service';
     TypeOrmModule.forRoot({
       type: 'mongodb',
       url: 'mongodb://admin:Anusha%401988@16.171.16.34:27017/?authSource=admin&authMechanism=SCRAM-SHA-1',
+     
       // database: DB_NAME,
       entities: [JournalEntity],
     }),
